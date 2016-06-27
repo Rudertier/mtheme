@@ -38,15 +38,23 @@ steps:
    presentation. To use Metropolis with many presentations, run `make install`
    or move the `*.sty` files to a folder in your TeX path instead (might require
    `sudo` rights).
+   
    Run: 
+   
    `sudo cd /usr/local/share/texmf/tex`
+   
    `sudo cp ~/gitHub/mtheme/*sty .`
+   
    `sudo cd ..`
+   
    `sudo mktexlsr`
+   
    That's it
 
+4. **Get Fira Font** check out `https://github.com/mozilla/Fira`
+   Install it by running `sudo cp *otf /usr/local/share/fonts`
 
-4. **Use the theme for your presentation** by declaring `\usetheme{metropolis}` in
+5. **Use the theme for your presentation** by declaring `\usetheme{metropolis}` in
     the preamble of your Beamer document.
 
 
