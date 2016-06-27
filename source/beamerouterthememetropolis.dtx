@@ -129,7 +129,9 @@
 %    \begin{macrocode}
 \defbeamertemplate{headline}{plain}{}
 \defbeamertemplate{footline}{plain}{%
-  \begin{beamercolorbox}[wd=\textwidth, sep=3ex]{footline}%
+  \begin{beamercolorbox}[wd=\textwidth, sep=0.5ex]{footline}%
+  \includegraphics[height=0.2cm]{gsilogo.pdf}~ \insertshortauthor $~|~$ \insertshorttitle  \insertshortsubtitle 
+    \hfill%
     \usebeamerfont{page number in head/foot}%
     \usebeamertemplate*{frame footer}
     \hfill%
@@ -164,12 +166,12 @@
   \nointerlineskip%
   \begin{beamercolorbox}[%
       wd=\paperwidth,%
-      sep=0pt,%
+      sep=0.90ex, %sep=0pt,%
       leftskip=\metropolis@frametitle@padding,%
       rightskip=\metropolis@frametitle@padding,%
     ]{frametitle}%
   \metropolis@frametitlestrut@start%
-  \insertframetitle%
+   \insertframetitle \hfill\includegraphics[trim= 0 1cm 0.5cm 0,height=0.6cm, ]{alicelogo.png} %
   \nolinebreak%
   \metropolis@frametitlestrut@end%
   \end{beamercolorbox}%
