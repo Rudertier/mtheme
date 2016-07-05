@@ -40,5 +40,19 @@
 \end{columns}
 \end{frame}	
 
+%___________________________________________________________________________________
+\begin{frame}[fragile]{Example listing}
+
+
+	\begin{lstlisting}
+	  cout<< "pt:"<< pt << "particle~compositon:" << parCompCorr << endl;	  
+	  Double_t corr    = parCompCorr*effCorr*secCorr;	  
+	  Double_t corrErr = parCompCorr*effCorr*secCorrErr+ parCompCorr*secCorr*effCorrErr + parCompCorrErr*secCorr*effCorr ; 	  
+	  // here comes the bug	  
+	  Double_t corr    = effCorr*secCorr;	  
+	  Double_t corrErr = effCorr*secCorrErr + secCorr*effCorrErr;  
+	\end{lstlisting} 
+
+\end{frame}	
 \end{document}
 
