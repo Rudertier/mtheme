@@ -1,4 +1,5 @@
 \include{header}
+\author[J. Gronefeld]{Julius Gronefeld } %{\tiny for the ALICE Collaboration}}
 \title[Short title]{Long title}
 \subtitle[ | Meeting]{Meeting}
 \date{\today}
@@ -52,7 +53,13 @@
 	  Double_t corr    = effCorr*secCorr;	  
 	  Double_t corrErr = effCorr*secCorrErr + secCorr*effCorrErr;  
 	\end{lstlisting} 
-
+	
+	\begin{textblock}{2.5}(12,3)
+	{\tiny Freely movable text!}
+	\begin{figure}
+	\includegraphics[width = \textwidth]{tpc}
+	\end{figure}
+\end{textblock}
 \end{frame}	
 \end{document}
 
