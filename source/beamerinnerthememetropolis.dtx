@@ -12,7 +12,7 @@
 % \iffalse
 %<*package>
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesPackage{beamerinnerthememetropolis}[2016/03/14 Metropolis inner theme]
+\ProvidesPackage{beamerinnerthememetropolis}[2017/01/23 Metropolis inner theme]
 %</package>
 % \fi
 % \CheckSum{0}
@@ -199,9 +199,11 @@
 \newlength{\metropolis@titleseparator@linewidth}
 \setlength{\metropolis@titleseparator@linewidth}{0.4pt}
 \setbeamertemplate{title separator}{
+  \tikzexternaldisable%
   \begin{tikzpicture}
     \fill[fg] (0,0) rectangle (\textwidth, \metropolis@titleseparator@linewidth);
   \end{tikzpicture}%
+  \tikzexternalenable%
   \par%
 }
 %    \end{macrocode}
@@ -336,10 +338,12 @@
   \setlength{\metropolis@progressonsectionpage}{%
     \textwidth * \ratio{\insertframenumber pt}{\inserttotalframenumber pt}%
   }%
+  \tikzexternaldisable%
   \begin{tikzpicture}
     \fill[bg] (0,0) rectangle (\textwidth, \metropolis@progressonsectionpage@linewidth);
     \fill[fg] (0,0) rectangle (\metropolis@progressonsectionpage, \metropolis@progressonsectionpage@linewidth);
   \end{tikzpicture}%
+  \tikzexternalenable%
 }
 %    \end{macrocode}
 %
@@ -552,9 +556,12 @@
         bg=palette primary.bg
       }
     }
-  \centering
-  \usebeamercolor[fg]{palette primary}
-  \usebeamerfont{standout}
+    \setbeamercolor{local structure}{
+      fg=palette primary.fg
+    }
+    \centering
+    \usebeamercolor[fg]{palette primary}
+    \usebeamerfont{standout}
 }
 %    \end{macrocode}
 %
