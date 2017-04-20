@@ -6,16 +6,20 @@
 \usepackage[ngerman,english]{babel}
 \usepackage{lmodern}
 \usepackage{ulem}
-
+\usepackage{pdfpages}
+\usepackage{marvosym}
+\usepackage{wasysym}
 \usepackage{setspace}
 \usepackage{color}
 \usepackage[absolute,overlay]{textpos}
 
+\usepackage[linewidth=1pt]{mdframed}
 \DeclareGraphicsExtensions{.pdf,.png,.jpg,.eps}
 
 \newcommand{\pt}{\ensuremath{\textit{p}_\text{T}\,}}
 \newcommand{\pz}{\ensuremath{\text{p}_\text{Z}\,}}
 \newcommand{\mpt}{\ensuremath{\langle\text{p}_\text{T}\rangle\,}}
+\newcommand{\dnchdeta}{\ensuremath{dN_{\text ch}/d\eta\,}}
 \newcommand{\rppb}{\ensuremath{\text{R}_\text{pPb}\,}}
 \newcommand{\raa}{\ensuremath{\text{R}_\text{AA}\,}}
 \newcommand{\tppb}{\ensuremath{\text{T}_\text{pPb}\,}}
@@ -45,6 +49,30 @@
 {figures/}
 }
 %
+
+%RGB:
+\definecolor{kBlack}{RGB}    {0,0,0}
+\definecolor{kGray}{RGB}     {204,204,204}
+
+\definecolor{kAzure}{RGB}    {0,51,255}
+
+\definecolor{kBlue}{RGB}     {0,0,225}
+\definecolor{kBlue+1}{RGB}   {0,0,204}
+
+\definecolor{kRed}{RGB}      {225,0,0}
+\definecolor{kRed+1}{RGB}    {204,0,0}
+
+\definecolor{kYellow+2}{RGB} {153,153,0}
+\definecolor{kYellow-2}{RGB} {153,153,51}
+
+\definecolor{kGreen-2}{RGB}  {51,153,51}
+
+\definecolor{kCyan+2}{RGB}   {0,153,153}
+\definecolor{kCyan-3}{RGB}   {51,204,204}
+
+%CMYK:
+%\definecolor{kBlue}{RGB} {46,49,146}
+%\definecolor{kBlue1}{RGB}{37,39,117}
 
 
 \definecolor{AliceRed}{HTML}{E2000B}
