@@ -38,6 +38,7 @@ steps:
    presentation. To use Metropolis with many presentations, run `make install`
    or move the `*.sty` files to a folder in your TeX path instead (might require
    `sudo` rights).
+<<<<<<< HEAD
 
    
    Run: 
@@ -57,6 +58,8 @@ steps:
 
 
 
+=======
+>>>>>>> 2fa6084b9d34fec9d2d5470eb9a17d0bf712b6c8
 4. **Use the theme for your presentation** by declaring `\usetheme{metropolis}` in
 
     the preamble of your Beamer document.
